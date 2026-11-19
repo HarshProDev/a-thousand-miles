@@ -170,7 +170,7 @@ export function FinalLetter({
                     {LETTER_CONTENT.chineseSeal}
                   </div>
                   <span className="text-xs text-crimson font-medium tracking-wide">
-                    India to China
+                    A letter from Harsh
                   </span>
                 </div>
 

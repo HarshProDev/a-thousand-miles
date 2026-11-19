@@ -29,9 +29,10 @@ export const PROJECT_IDENTITY = {
   title: 'A Thousand Miles, One Friendship',
   chineseSubtitle: '千里之外，一份友谊',
   tagline: 'A little world created just for you.',
-  footerSignature: 'With love, from India to China.',
+  footerSignature: 'Made with love by Harsh, especially for Zai Zai.',
+  chineseFooterSignature: 'Harsh 为 Zai Zai 用心制作',
   recipient: 'Zai Zai',
-  sender: 'Your friend from India',
+  sender: 'Harsh',
 };
 
 export const CHAPTERS: ChapterMeta[] = [
@@ -43,12 +44,12 @@ export const CHAPTERS: ChapterMeta[] = [
 ];
 
 export const INVITATION_CONTENT = {
-  kicker: 'A Little Surprise From India',
+  kicker: 'A Little Birthday Surprise, Made by Harsh',
   heading: 'For Zai Zai',
   chineseSubtitle: '生日快乐',
   supportingText:
-    'Zai Zai, even across all these miles, I wanted to make something that feels close to you.',
-  chineseSupportingText: '相隔千里，也挡不住我想把这份心意送给你。',
+    'Zai Zai, even across all these miles, I wanted to make something personal that feels close to you.',
+  chineseSupportingText: '相隔千里，Harsh 也想为你准备一份贴心的惊喜。',
   buttonLabel: 'Open Your Surprise',
 };
 
@@ -56,8 +57,8 @@ export const GARDEN_CONTENT = {
   heading: 'Welcome to Your Little World',
   chineseSubtitle: '愿你每天都开心',
   supportingText:
-    'A little garden for the moments, conversations, and little things that make our friendship feel close.',
-  chineseSupportingText: '这里收藏着让我想起你的瞬间。虽然相隔很远，你一直都是我珍惜的朋友。',
+    'Harsh made this little garden for the moments, conversations, and little things that make our friendship feel close.',
+  chineseSupportingText: 'Harsh 为我们的回忆和友情准备了这座小花园。虽然相隔很远，你一直都是我珍惜的朋友。',
   nextButtonLabel: 'Walk Further Into the Garden',
   photos: [
     {
@@ -153,16 +154,18 @@ export const ROSE_CONTENT = {
   heading: 'A Rose From India',
   chineseSubtitle: '千里寄花',
   imageSrc: '/images/my-rose.jpg',
-  imageAlt: 'Your friend in India holding a rose for Zai Zai',
+  imageAlt: 'Harsh in India holding a rose for Zai Zai',
   supportingText:
-    "I couldn't send you a real flower across the distance, so I decided to send you a little piece of this moment instead.",
-  chineseSupportingText: '虽然不能把真正的花送到你身边，但我想把这份来自印度的心意寄给你。',
+    "I couldn't send you a real flower across the distance, so I wanted to share this little moment with you instead.",
+  chineseSupportingText: '虽然不能把真正的花送到你身边，Harsh 还是想把这份来自印度的心意寄给你。',
   buttonLabel: 'Touch the Rose',
   revealedMessage: [
     'If I could send you one thing today, it would be a rose with a reminder: you deserve all the beautiful things in life.',
     'Happy birthday, Zai Zai.',
   ],
   chineseRevealedMessage: '愿你被生活温柔以待，也愿所有美好的事情都来到你身边。生日快乐！',
+  revealedSignature: 'With love, Harsh.',
+  chineseRevealedSignature: '来自 Harsh 的祝福',
   nextButtonLabel: 'Read One Last Letter',
 };
 
@@ -183,7 +186,7 @@ export const LETTER_CONTENT = {
     'Thank you for being my friend.',
     'Never stop being the wonderful person you are.',
     'Sending a little rose and lots of warm wishes from India to China.',
-    'With friendship,\nYour friend from India.',
+    'With friendship,\nHarsh.',
   ],
   chineseParagraphs: [
     '亲爱的 Zai Zai：',
@@ -194,7 +197,7 @@ export const LETTER_CONTENT = {
     '谢谢你成为我的朋友。',
     '请一直做那个美好的你。',
     '从印度寄去一朵小玫瑰，以及满满的祝福，送给远在中国的你。',
-    '带着友谊，\n来自印度的朋友。',
+    '带着友谊，\nHarsh。',
   ],
 };
 
@@ -203,8 +206,8 @@ export const CELEBRATION_CONTENT = {
   englishHeading: 'Happy Birthday, Zai Zai!',
   finalMessage: 'Distance is just geography. Friendship is something else.',
   chineseFinalMessage: '距离只是地图上的数字，友情却能跨越山海。',
-  signature: 'Made with warmth, from India to China.',
-  chineseSignature: '来自印度的温暖祝福',
+  signature: 'Made with love by Harsh, especially for Zai Zai.',
+  chineseSignature: 'Harsh 为 Zai Zai 献上最温暖的祝福',
   replayButtonLabel: 'Experience Again',
   keepsakeButtonLabel: 'Keep This Little Memory',
 };

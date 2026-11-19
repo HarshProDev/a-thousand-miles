@@ -62,6 +62,11 @@ export function EnvelopeCollection({
           <p lang="zh-CN" className="mt-2 font-chinese text-sm sm:text-base text-ink/70 leading-relaxed">
             {ENVELOPE_COLLECTION_CONTENT.chineseSubtitle}
           </p>
+          <p className="mt-2 text-xs text-crimson/75">
+            Little notes from Harsh, just for you
+            <span aria-hidden="true"> · </span>
+            <span lang="zh-CN" className="font-chinese">Harsh 写给你的悄悄话</span>
+          </p>
           <p className="mt-2 text-xs text-crimson/80 tabular-nums">
             {openedCount} of {ENVELOPE_COLLECTION_CONTENT.envelopes.length} opened
             <span aria-hidden="true"> · </span>

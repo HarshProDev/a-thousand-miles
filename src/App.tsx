@@ -190,6 +190,12 @@ export default function App() {
             ·
           </span>
           <span>{PROJECT_IDENTITY.footerSignature}</span>
+          <span className="mx-2" aria-hidden="true">
+            ·
+          </span>
+          <span lang="zh-CN" className="font-chinese">
+            {PROJECT_IDENTITY.chineseFooterSignature}
+          </span>
         </footer>
       </div>
       <Analytics />

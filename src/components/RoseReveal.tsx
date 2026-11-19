@@ -157,6 +157,13 @@ export function RoseReveal({
                   <p lang="zh-CN" className="font-chinese text-sm sm:text-base text-peach/90">
                     {ROSE_CONTENT.chineseRevealedMessage}
                   </p>
+                  <p className="pt-1 text-sm text-gold">
+                    {ROSE_CONTENT.revealedSignature}
+                    <span aria-hidden="true"> · </span>
+                    <span lang="zh-CN" className="font-chinese">
+                      {ROSE_CONTENT.chineseRevealedSignature}
+                    </span>
+                  </p>
                 </div>
 
                 <motion.div

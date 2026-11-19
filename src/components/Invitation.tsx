@@ -247,6 +247,11 @@ export function Invitation({
         >
           {INVITATION_CONTENT.chineseSupportingText}
         </motion.p>
+        <p className="mt-2 text-xs tracking-wide text-gold/75">
+          A personal gift from Harsh to Zai Zai
+          <span aria-hidden="true"> · </span>
+          <span lang="zh-CN" className="font-chinese">Harsh 送给 Zai Zai 的专属礼物</span>
+        </p>
 
         <motion.div
           initial={{ opacity: 0, y: 10 }}
