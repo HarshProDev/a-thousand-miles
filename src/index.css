@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@theme {
+  --color-burgundy: #562231;
+  --color-wine: #351722;
+  --color-crimson: #A63F4B;
+  --color-gold: #D8BB7E;
+  --color-ivory: #FBF4E9;
+  --color-peach: #E8B4A5;
+  --color-dusty-rose: #B9817E;
+  --color-ink: #40312F;
+  --color-jade: #6E9A82;
+
+  --font-display: "Cormorant Garamond", "Songti SC", Georgia, serif;
+  --font-chinese: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #351722;
+    color: #F8F0E2;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-chinese {
+  font-family: var(--font-chinese);
+}
+
+.font-sans-ui {
+  font-family: var(--font-sans);
+}
+
+/* Subtle parchment paper texture using pure CSS gradients (no external requests) */
+.parchment-surface {
+  background-color: #F8F0E2;
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(214, 183, 124, 0.14) 0%, transparent 48%),
+    radial-gradient(circle at 82% 76%, rgba(189, 133, 132, 0.12) 0%, transparent 52%),
+    linear-gradient(180deg, rgba(255, 252, 245, 0.45) 0%, rgba(242, 229, 207, 0.35) 100%);
+}
+
+/* Subtle dark silk atmosphere */
+.silk-night-surface {
+  background-color: #351722;
+  background-image:
+    radial-gradient(circle at 50% 18%, rgba(166, 63, 75, 0.32) 0%, transparent 56%),
+    radial-gradient(circle at 15% 80%, rgba(110, 154, 130, 0.12) 0%, transparent 44%),
+    radial-gradient(circle at 85% 72%, rgba(84, 34, 49, 0.65) 0%, transparent 50%),
+    linear-gradient(180deg, #48202D 0%, #351722 55%, #270F19 100%);
+}
+
+.garden-twilight-surface {
+  background-color: #2A0F18;
+  background-image:
+    radial-gradient(circle at 75% 18%, rgba(216, 187, 126, 0.18) 0%, transparent 38%),
+    radial-gradient(circle at 25% 32%, rgba(166, 63, 75, 0.28) 0%, transparent 55%),
+    radial-gradient(circle at 90% 76%, rgba(110, 154, 130, 0.11) 0%, transparent 42%),
+    linear-gradient(180deg, #42202B 0%, #2D141E 60%, #200D15 100%);
+}
+
+@keyframes lanternSway {
+  0%,
+  100% {
+    transform: rotate(-2.5deg);
+  }
+  50% {
+    transform: rotate(2.5deg);
+  }
+}
+
+.animate-lantern-sway {
+  transform-origin: top center;
+  animation: lanternSway 6.5s ease-in-out infinite;
+}
+
+@keyframes gentleFloat {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-gentle-float {
+  animation: gentleFloat 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-lantern-sway,
+  .animate-gentle-float {
+    animation: none !important;
+  }
+}
+
+/* Safe area bottom padding for iOS/Android mobile devices */
+.pb-safe {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+.pt-safe {
+  padding-top: max(0.5rem, env(safe-area-inset-top));
+}
