@@ -12,7 +12,7 @@ import { Invitation } from './components/Invitation';
 import { MusicController } from './components/MusicController';
 import { ProgressIndicator } from './components/ProgressIndicator';
 import { RoseReveal } from './components/RoseReveal';
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function App() {
   const experience = useExperience();
